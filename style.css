@@ -13,9 +13,27 @@ body {
 }
 .main {
   max-width: 90rem;
-  margin: 20rem auto;
+  margin: 0rem auto;
 }
-
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  padding: 2rem;
+}
+.task:link,
+.task:visited {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #444;
+  text-decoration: none;
+  cursor: pointer;
+}
+header {
+  justify-content: end;
+  display: flex;
+  gap: 2rem;
+}
 .box {
   display: flex;
   align-items: center;
