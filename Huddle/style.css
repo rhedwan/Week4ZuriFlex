@@ -86,12 +86,10 @@ img {
 .display-item {
   display: grid;
   grid-template-columns: 50fr 50fr;
-  grid-template-rows: repeat(3, 50px);
-  gap: 3rem;
+  gap: 10rem;
   justify-content: space-between;
   border-radius: 1.4rem;
-  padding: 5rem;
-  padding-right: 15rem;
+  padding: 4rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 .display-item .text {
@@ -99,13 +97,10 @@ img {
   font-size: 1.3rem;
   flex-direction: column;
   justify-content: center;
-  padding-top: 12rem;
+  padding: 6rem;
   font-family: "Poppins", sans-serif;
 }
 
-.display-item div:nth-child(2) {
-  justify-self: flex-end;
-}
 .feature-name {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -117,6 +112,7 @@ img {
 .join {
   background-color: #fff;
   color: hsl(192, 100%, 9%);
+  text-align: center;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -199,24 +195,67 @@ footer section {
 .copyright {
   align-self: end;
 }
-@media (max-width: 120em) {
-  html {
-    font-size: 56.35%;
-  }
-  .container {
-    max-width: 130rem;
-    margin: 0 auto;
-  }
+.order:nth-child(1) {
+  order: 1;
 }
-@media (max-width: 75em) {
+.order:nth-child(2) {
+  order: 0;
+}
+@media (max-width: 48em) {
   html {
     font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-text-box {
+    text-align: center;
   }
   .container {
     max-width: 130rem;
     margin: 0 2rem;
   }
   .header img {
+    width: 17rem;
+  }
+  .display-item {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    gap: 3rem;
+    padding-right: 2.5rem;
+  }
+  .display-item .text {
+    padding: 0;
+    width: 100%;
+  }
+  .order-screen:nth-child(odd) {
+    order: 2;
+  }
+  .order-screen:nth-child(even) {
+    order: 1;
+  }
+  .footer-menu {
+    grid-template-columns: 1fr;
+  }
+  .socials {
+    justify-content: center;
+  }
+  .copyright {
+    align-self: center;
+  }
+  .footer-img {
     width: 20rem;
+  }
+  footer section {
+    margin-top: 40rem;
+  }
+  .join {
+    width: 80vw;
+    padding: 1.5rem 4rem;
+  }
+  .join-btn:link,
+  .join-btn:visited {
+    padding: 2rem 4rem;
   }
 }
