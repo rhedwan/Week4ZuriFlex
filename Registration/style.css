@@ -82,7 +82,7 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 .btn {
   background-color: hsl(154, 59%, 51%);
@@ -101,17 +101,28 @@ body {
 .terms span {
   color: hsl(0, 100%, 74%);
 }
-/* input:required + span:after {
-  content: "Required";
-  color: red;
-} */
 *:focus {
   /* outline: none !important; */
   outline: #495057 solid 0.1rem !important;
 }
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form div .error {
+  align-self: flex-end;
+}
+
 .failure-icon,
 .error {
   color: red;
+  height: 1rem;
+}
+
+.failure-icon {
+  font-size: 3rem;
 }
 
 form div i {
