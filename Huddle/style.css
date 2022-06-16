@@ -183,6 +183,10 @@ ul {
   justify-content: center;
   align-items: center;
 }
+.icon:hover {
+  border: 0.1rem hsl(322, 100%, 66%) solid;
+  fill: hsl(322, 100%, 66%);
+}
 .icon svg {
   width: 2.4rem;
   height: 2.4rem;
