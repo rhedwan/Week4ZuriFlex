@@ -10,6 +10,9 @@ html {
 body {
   color: #f1f3f5;
   font-family: "Poppins", sans-serif;
+  background-image: url("./images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  background-size: cover;
 }
 .section {
   max-width: 120rem;
@@ -17,9 +20,9 @@ body {
   margin: 0 auto;
 }
 .main {
-  background-image: url("./images/bg-intro-desktop.png");
+  /* background-image: url("./images/bg-intro-desktop.png");
   background-color: hsl(0, 100%, 74%);
-  background-size: cover;
+  background-size: cover; */
   height: 100vh;
 }
 .hero {
@@ -133,4 +136,26 @@ form div i {
 .failure-icon {
   right: 0;
   opacity: 0;
+}
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .section {
+    /* max-width: 84rem; */
+
+    padding: 4rem 4rem;
+    margin: 0;
+  }
+  .main-text,
+  .main-desc {
+    text-align: center;
+  }
+  .hero-item {
+    width: 100%;
+  }
 }
