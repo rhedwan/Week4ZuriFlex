@@ -184,6 +184,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .icon:hover {
   border: 0.1rem hsl(322, 100%, 66%) solid;
