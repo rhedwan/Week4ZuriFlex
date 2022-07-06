@@ -270,3 +270,8 @@ footer section {
     padding: 2rem 4rem;
   }
 }
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: hsl(193, 100%, 96%);
+}
